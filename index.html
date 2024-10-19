@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="BSI Logo.jpg" />
     <title>Bank BSI - Beranda</title>
 
     <!-- Menambahkan link font dari Google Fonts -->
@@ -128,7 +129,7 @@
             text-align: center; /* Memusatkan judul */
             font-size: 2.5rem;
             font-weight: 600;
-            color:rgb(253, 151, 27);
+            color: rgb(253, 151, 27);
             margin-bottom: 20px;
         }
 
@@ -160,6 +161,54 @@
             background-color: #10b5a7;
             color: white;
             text-align: center;
+        }
+
+        /* Media Queries untuk responsivitas */
+        @media (max-width: 768px) {
+            .tools {
+                flex-direction: column; /* Ubah arah flex menjadi kolom */
+                align-items: center; /* Pusatkan item */
+            }
+
+            .tools a {
+                width: 100%; /* Buat tautan memenuhi lebar */
+                text-align: center; /* Pusatkan teks */
+                margin: 5px 0; /* Jarak antara tautan */
+            }
+
+            nav {
+                flex-direction: column; /* Ubah arah flex menjadi kolom */
+            }
+
+            nav a {
+                width: 100%; /* Buat tautan memenuhi lebar */
+                text-align: center; /* Pusatkan teks */
+                padding: 10px 0; /* Tambahkan padding vertikal */
+            }
+
+            .services {
+                flex-direction: column; /* Ubah arah flex menjadi kolom */
+                align-items: center; /* Pusatkan item */
+            }
+
+            .service {
+                width: 80%; /* Lebar lebih kecil pada layar kecil */
+                margin: 10px 0; /* Tambahkan margin vertikal */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem; /* Ukuran font lebih kecil pada layar sangat kecil */
+            }
+
+            h2#layanan {
+                font-size: 2rem; /* Ukuran font lebih kecil pada layar sangat kecil */
+            }
+
+            .service {
+                width: 90%; /* Lebar lebih kecil pada layar sangat kecil */
+            }
         }
     </style>
 </head>
@@ -210,7 +259,7 @@
 </section>
 
 <footer>
-    <p>⭐Bank Syariah Indonesia (BSI)⭐</p>
+    <p>&copy; 2024 Bank BSI. All Rights Reserved.</p>
 </footer>
 
 </body>

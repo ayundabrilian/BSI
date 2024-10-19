@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BSI Logo.jpg" />
     <title>Kontak Kami</title>
     <link rel="stylesheet" href="style.css"> <!-- Pastikan untuk menghubungkan file CSS Anda -->
     <style>
@@ -63,6 +64,57 @@
         .back-button:hover {
             background-color: #999; /* Warna saat hover untuk tombol kembali */
         }
+
+        /* Media Queries untuk responsivitas */
+        @media (max-width: 768px) {
+            .contact-container {
+                max-width: 90%; /* Sesuaikan lebar pada layar lebih kecil */
+                padding: 15px; /* Kurangi padding untuk layar kecil */
+                margin: 20px auto; /* Kurangi margin pada layar kecil */
+            }
+
+            .contact-container h2 {
+                font-size: 1.5rem; /* Sesuaikan ukuran font judul */
+            }
+
+            .contact-container input,
+            .contact-container textarea {
+                font-size: 0.9rem; /* Sesuaikan ukuran font input */
+            }
+
+            .contact-container button {
+                font-size: 0.9rem; /* Sesuaikan ukuran font tombol */
+                padding: 8px; /* Kurangi padding tombol */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-container {
+                max-width: 95%; /* Lebar penuh pada perangkat mobile */
+                margin: 10px; /* Kurangi margin pada perangkat yang sangat kecil */
+            }
+
+            .contact-container h2 {
+                font-size: 1.3rem; /* Ukuran font lebih kecil pada perangkat kecil */
+            }
+
+            .contact-container input,
+            .contact-container textarea {
+                font-size: 0.85rem; /* Ukuran input lebih kecil */
+                padding: 8px; /* Padding input lebih kecil */
+            }
+
+            .contact-container button {
+                font-size: 0.85rem; /* Ukuran tombol lebih kecil */
+                padding: 7px; /* Padding tombol lebih kecil */
+            }
+        }
+
+        @media (max-width: 768px) and (orientation: landscape) {
+            .contact-container {
+                margin: 30px; /* Sesuaikan margin pada mode lanskap */
+            }
+        }
     </style>
 </head>
 <body>
@@ -74,7 +126,7 @@
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" rows="4" placeholder="Tanyakan sesuatu..." required></textarea>
             <button type="submit">Kirim Pertanyaan</button>
-            <button type="button" class="back-button" onclick="window.location.href='index.html.html';">Kembali</button> <!-- Ubah 'beranda.html' sesuai dengan nama halaman beranda Anda -->
+            <button type="button" class="back-button" onclick="window.location.href='index.html';">Kembali</button> <!-- Ubah 'index.html' sesuai dengan nama halaman beranda Anda -->
         </form>
     </div>
 
