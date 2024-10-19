@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css"> <!-- Pastikan untuk menghubungkan file CSS Anda -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font untuk halaman */
+            background-color: #f5f5f5; /* Warna latar belakang */
+            margin: 0; /* Menghapus margin default */
+            padding: 0; /* Menghapus padding default */
+        }
+
+        .contact-container {
+            background-color: #ffffff; /* Warna latar belakang putih */
+            border-radius: 8px; /* Sudut membulat */
+            padding: 20px; /* Ruang dalam */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+            max-width: 400px; /* Lebar maksimum */
+            margin: 50px auto; /* Pusatkan di halaman */
+        }
+
+        .contact-container h2 {
+            text-align: center; /* Pusatkan judul */
+            color: rgb(253, 151, 27); /* Warna judul */
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%; /* Lebar penuh */
+            padding: 10px; /* Ruang dalam */
+            margin: 10px 0; /* Jarak antar elemen */
+            border: 1px solid #ccc; /* Batas abu-abu */
+            border-radius: 4px; /* Sudut membulat */
+            font-size: 1rem; /* Ukuran font */
+        }
+
+        .contact-container button {
+            width: 100%; /* Lebar penuh */
+            padding: 10px; /* Ruang dalam */
+            background-color: rgb(253, 151, 27); /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            border: none; /* Tanpa batas */
+            border-radius: 4px; /* Sudut membulat */
+            cursor: pointer; /* Kursor pointer */
+            font-size: 1rem; /* Ukuran font tombol */
+            transition: background-color 0.3s; /* Efek transisi */
+            margin-top: 10px; /* Jarak atas untuk pemisah */
+        }
+
+        .contact-container button:hover {
+            background-color: #0d978d; /* Warna saat hover */
+        }
+
+        .back-button {
+            background-color: #ccc; /* Warna latar belakang tombol kembali */
+            color: black; /* Warna teks tombol kembali */
+            margin-top: 10px; /* Jarak atas untuk pemisah */
+        }
+
+        .back-button:hover {
+            background-color: #999; /* Warna saat hover untuk tombol kembali */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h2>Kontak Kami</h2>
+        <form action="https://formspree.io/f/xanyyrqy" method="POST">
+            <input type="text" name="name" placeholder="Nama Lengkap" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" rows="4" placeholder="Tanyakan sesuatu..." required></textarea>
+            <button type="submit">Kirim Pertanyaan</button>
+            <button type="button" class="back-button" onclick="window.location.href='beranda⭐.html';">Kembali</button> <!-- Ubah 'beranda.html' sesuai dengan nama halaman beranda Anda -->
+        </form>
+    </div>
+
+</body>
+</html>

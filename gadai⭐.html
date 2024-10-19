@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gadai Emas - Bank BSI</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: rgb(253, 151, 27);
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        box-shadow: 0px 4px 8px rgba(21, 227, 227, 0.986);
+        z-index: 200;
+      }
+
+      .logo img {
+        width: 120px;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #11d7c6;
+      }
+
+      .hero {
+        background-color: #fff;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        margin: 100px auto 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        padding: 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .description.bsi {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #20b2aa;
+        margin-top: 20px;
+      }
+
+      .description {
+        font-size: 1.2rem;
+        color: #333;
+        margin: 5px 0;
+      }
+
+      .description.highlight {
+        font-family: "Cursive", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #ff5722;
+        margin: 20px 0;
+      }
+
+      .info-table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+      }
+
+      .info-table th,
+      .info-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      .info-table th {
+        background-color: #10b5a7;
+        color: white;
+      }
+
+      .form-container {
+        margin-top: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-container input,
+      .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .form-container button {
+        background-color: #10b5a7;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      .form-container button:hover {
+        background-color: #0d978d;
+      }
+
+      /* Hero untuk BROSUR GADAI EMAS */
+      .brochure-hero {
+        background-color: #fff;
+        height: 1000px; /* Tinggi lebih besar untuk menampilkan seluruh brosur */
+        width: 600px;
+        border-radius: 0;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .brochure-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="BSI Logo.jpg" alt="Logo Bank BSI" />
+      </div>
+      <nav>
+        <a href="beranda⭐.html">Beranda</a>
+        <a href="aboutnya⭐.html">Tentang Kami</a>
+        <a href="cicil⭐.html">Cicil Emas</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+        <img src="FTO  BSI UANG.jpg" alt="Foto Bank BSI" />
+      </section>
+  
+      <div class="container">
+        <p class="description bsi" style="text-align: left; margin-bottom: 30px">
+            BSI Gadai Emas
+        </p>
+        <p class="description" style="text-align: left">
+            Nikmati kemudahan gadai emas dengan layanan terbaik dari Bank Syariah Indonesia. 
+            Dapatkan solusi keuangan Anda dengan prinsip syariah yang terpercaya.
+        </p>
+  
+        <p class="description bsi" style="text-align: left; margin-bottom: 30px">
+            Apa itu Gadai Emas?
+        </p>
+  
+        <p class="description" style="text-align: left">
+            Produk unggulan gadai untuk memenuhi kebutuhan dana cepat 
+            dan aman dengan jaminan emas batangan / perhiasan emas.
+        </p>
+  
+        <p class="description bsi" style="text-align: left; margin-bottom: 30px">
+            Mengapa pilih Gadai Emas?
+        </p>
+  
+        <p class="description" style="text-align: left">
+            ✅ Proses pengajuan mudah</p>
+        </p>
+        <p class="description" style="text-align: left">
+            ✅ Dapat dicicil dan dilunasi sewaktu-waktu, serta bisa diperpanjang berkali-kali</p>
+        </p>
+        <p class="description" style="text-align: left">
+            ✅ Barang jaminan aman dan diasuransikan
+        </p>
+  
+        <p
+          class="description highlight"
+          style="text-align: left; margin-bottom: 30px"
+        >
+          PERSYARATAN
+        </p>
+  
+        <p class="description bsi" style="text-align: left; margin-bottom: 20px">
+          Apa yang Harus Dilengkapi?
+        </p>
+  
+        <p class="description" style="text-align: left">
+          🪙 Kartu identitas yang berlaku (KTP)
+        </p>
+        <p class="description" style="text-align: left">🪙 Barang jaminan emas batangan / perhiasan emas.</p>
+  
+        <p
+          class="description highlight"
+          style="text-align: left; margin-bottom: 30px"
+        >
+          Pengajuan
+        </p>
+  
+        <p class="description bsi" style="text-align: left; margin-bottom: 20px">
+          Langkah-langkah Pengajuan Cicil Emas
+        </p>
+  
+        <p class="description" style="text-align: left">
+          1. Datang ke outlet Bank BSI KCP Botania Garden
+        </p>
+        <p class="description" style="text-align: left">
+          2. Melampirkan fotokopi kartu identitas (KTP)
+        </p>
+        <p class="description" style="text-align: left">
+          3. Mengisi form pengajuan Gadai Emas
+        </p>
+        <p class="description" style="text-align: left">
+          4. Menyerahkan barang jaminan
+        </p>
+        <p class="description" style="text-align: left">
+          5. Barang jaminan ditaksir oleh petugas gadai BSI
+        </p>
+        <p class="description" style="text-align: left">
+          6. Konfirmasi uang pinjaman
+        </p>
+        <p class="description" style="text-align: left">
+          7. Menandatangani Surat Bukti Gadai Emas (SBGE)
+        </p>
+  
+        <p
+          class="description highlight"
+          style="text-align: left; margin-bottom: 30px"
+        >
+          ⭐DETAIL LAYANAN⭐
+        </p>
+        <p class="description bsi" style="text-align: left; margin-bottom: 20px">
+          Simulasi Gadai Emas
+        </p>
+  
+        <table
+        class="info-table"
+        style="                       
+          width: 120%;
+          margin: 0 auto;
+          background-color: #e0f7f5;
+          border-collapse: collapse;
+          border: 2px solid #10b5a7;
+        "
+      >
+        <thead>
+            <tr>
+                <th style="width: 50%; background-color: #10b5a7; color: white; border: 2px solid #10b5a7;">Fitur</th>
+                <th style="width: 50%; background-color: #10b5a7; color: white; border: 2px solid #10b5a7;">Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 16px; color: #333; border: 2px solid #10b5a7;">Produk</td>
+                <td style="padding: 16px; color: #333; border: 2px solid #10b5a7;">Gadai Emas.</td>
+            </tr>
+            <tr>
+                <td style="padding: 16px; color: #333; border: 2px solid #10b5a7;">Jangka Waktu</td>
+                <td style="padding: 16px; color: #333; border: 2px solid #10b5a7;">4 Bulan dan dapat diperpanjang</td>
+            </tr>
+            <tr>
+                <td style="padding: 16px; color: #333; border: 2px solid #10b5a7;">Biaya Mu'nah perbulan</td>
+                <td style="padding: 16px; color: #333; border: 2px solid #10b5a7;">0,8%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <section class="brochure-hero">
+        <img src="BROSUR GADAI EMAS.jpg" alt="Foto Bank BSI" />
+    </section>
+    </body>
+  </html>
