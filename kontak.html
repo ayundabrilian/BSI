@@ -121,7 +121,7 @@
 
     <div class="contact-container">
         <h2>Kontak Kami</h2>
-        <form action="https://formspree.io/f/xanyyrqy" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xanyyrqy" method="POST" onsubmit="resetForm()">
             <input type="text" name="name" placeholder="Nama Lengkap" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" rows="4" placeholder="Tanyakan sesuatu..." required></textarea>
@@ -129,5 +129,12 @@
             <button type="button" class="back-button" onclick="window.location.href='index.html';">Kembali</button> <!-- Ubah 'index.html' sesuai dengan nama halaman beranda Anda -->
         </form>
     </div>
+
+    <script>
+        function resetForm() {
+            // Mengosongkan semua input dan textarea setelah pengiriman
+            document.getElementById('contact-form').reset();
+        }
+    </script>
 </body>
 </html>
