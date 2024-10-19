@@ -121,7 +121,7 @@
 
     <div class="contact-container">
         <h2>Kontak Kami</h2>
-        <form id="contact-form" action="https://formspree.io/f/xanyyrqy" method="POST" onsubmit="resetForm()">
+        <form id="contact-form" action="https://formspree.io/f/xanyyrqy" method="POST" onsubmit="return handleSubmit(event)">
             <input type="text" name="name" placeholder="Nama Lengkap" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" rows="4" placeholder="Tanyakan sesuatu..." required></textarea>
@@ -131,9 +131,30 @@
     </div>
 
     <script>
-        function resetForm() {
-            // Mengosongkan semua input dan textarea setelah pengiriman
-            document.getElementById('contact-form').reset();
+        function handleSubmit(event) {
+            event.preventDefault(); // Mencegah pengiriman default
+            const form = document.getElementById('contact-form');
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    form.reset(); // Reset form jika pengiriman sukses
+                    alert('Pesan Anda telah dikirim!'); // Beri tahu pengguna
+                } else {
+                    alert('Terjadi kesalahan, silakan coba lagi.'); // Beri tahu pengguna tentang kesalahan
+                }
+            })
+            .catch(error => {
+                alert('Terjadi kesalahan, silakan coba lagi.'); // Beri tahu pengguna tentang kesalahan
+            });
+            return false; // Mencegah pengiriman default
         }
     </script>
 </body>
