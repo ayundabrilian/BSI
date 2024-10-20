@@ -39,12 +39,15 @@
         }
 
         .logo img {
-            width: 200px;
+            width: 100%; /* Menyesuaikan lebar gambar */
+            max-width: 200px; /* Lebar maksimum untuk logo */
+            height: auto; /* Menjaga rasio aspek */
         }
 
         .title-container {
             flex-grow: 1;
             text-align: center;
+            margin-right: 20px; /* Tambahkan margin kanan agar tidak terlalu dekat dengan hamburger */
         }
 
         .title-container h1 {
@@ -192,6 +195,14 @@
             .service {
                 width: 80%;
             }
+
+            .logo img {
+                max-width: 150px; /* Menyesuaikan ukuran logo di layar kecil */
+            }
+
+            .title-container h1 {
+                font-size: 1.5rem; /* Mengurangi ukuran font judul */
+            }
         }
 
         @media (max-width: 480px) {
@@ -205,6 +216,14 @@
 
             .service {
                 width: 90%;
+            }
+
+            .logo img {
+                max-width: 120px; /* Menyesuaikan ukuran logo di layar sangat kecil */
+            }
+
+            .title-container h1 {
+                font-size: 1.2rem; /* Mengurangi ukuran font judul lebih jauh */
             }
         }
     </style>
