@@ -23,6 +23,11 @@ header {
     transition: background-color 0.3s ease; /* Tambahkan transisi */
 }
 
+.logo {
+    display: flex; /* Menambahkan flex untuk logo */
+    align-items: center; /* Memastikan logo vertikal center */
+}
+
 .logo img {
     width: 120px;
 }
@@ -152,13 +157,13 @@ nav.active a {
 /* Media Query untuk Responsif */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row; /* Pastikan header tetap dalam satu baris */
         height: auto;
         padding: 15px;
     }
 
     .hamburger {
-        display: flex;
+        display: flex; /* Tampilkan hamburger menu */
     }
 
     nav {
