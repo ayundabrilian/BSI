@@ -36,7 +36,7 @@ Kami menjamin keamanan data nasabah yang disimpan dan diproses melalui website i
 Jika Anda memiliki pertanyaan lebih lanjut terkait layanan kami, jangan ragu untuk menghubungi kontak person di bawah ini:
 
 - **Nama**: [Ririn]
-- **Email**: https://ayundabrilian.github.io/BSI/
+- **Email**: ririn.rdrahayu88@gmail.com
 - **Telepon**: +62 819-1988-0819
 - **Alamat Kantor**: JL Botania, Batam Center, Belian, Kec. Batam Kota, Kota Batam, Kepulauan Riau 29465
 
