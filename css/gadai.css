@@ -163,7 +163,7 @@ nav.active a {
 
     .hamburger {
         display: flex; /* Tampilkan hamburger menu */
-        margin-left: 20px; /* Memastikan hamburger menu berada di sebelah kanan */
+        margin: 20px; /* Memastikan hamburger menu berada di sebelah kanan */
     }
 
     nav {
