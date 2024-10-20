@@ -12,7 +12,7 @@ header {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Menjaga logo dan hamburger terpisah */
     position: fixed;
     top: 0;
     left: 0;
@@ -26,6 +26,7 @@ header {
 .logo {
     display: flex; /* Menambahkan flex untuk logo */
     align-items: center; /* Memastikan logo vertikal center */
+    margin-left: 15px; /* Memberikan jarak dari sisi kiri */
 }
 
 .logo img {
@@ -54,9 +55,7 @@ nav a:hover {
     display: none; /* Sembunyikan secara default */
     flex-direction: column;
     cursor: pointer;
-    position: absolute; /* Mengatur posisi absolut */
-    right: 15px; /* Jarak dari sisi kanan */
-    top: 15px; /* Jarak dari atas */
+    margin-right: 15px; /* Jarak dari sisi kanan */
 }
 
 .hamburger span {
