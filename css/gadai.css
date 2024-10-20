@@ -157,8 +157,8 @@ nav.active a {
 @media (max-width: 768px) {
     header {
         flex-direction: row; /* Pastikan header tetap dalam satu baris */
-        height: auto; /* Biarkan tinggi header menyesuaikan dengan konten */
-        padding: 10px; /* Menambahkan padding lebih besar */
+        height: 50px; /* Tinggi header lebih kecil untuk responsif */
+        padding: 10px; /* Menambahkan padding lebih kecil */
     }
 
     .hamburger {
@@ -176,7 +176,7 @@ nav.active a {
     nav.active {
         display: flex; /* Tampilkan navbar saat aktif */
         position: absolute; /* Menggunakan posisi absolut */
-        top: 50px; /* Sesuaikan dengan tinggi header */
+        top: 50px; /* Sesuaikan dengan tinggi header yang baru */
         left: 0;
         right: 0;
         background-color: rgb(253, 151, 27); /* Warna latar belakang */
