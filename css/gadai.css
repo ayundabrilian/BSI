@@ -9,42 +9,43 @@ body {
 header {
     background-color: rgb(253, 151, 27);
     color: white;
-    padding: 5px; /* Mengurangi padding untuk header yang lebih kecil */
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Menjaga logo dan hamburger terpisah */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px; /* Tinggi lebih kecil untuk desktop */
+    height: 70px; /* Tinggi tetap untuk desktop */
     box-shadow: 0px 4px 8px rgba(21, 227, 227, 0.986);
     z-index: 200;
+    transition: background-color 0.3s ease; /* Tambahkan transisi */
 }
 
 .logo {
-    display: flex; 
-    align-items: center; 
-    margin-left: 10px; /* Memberikan jarak dari sisi kiri */
+    display: flex; /* Menambahkan flex untuk logo */
+    align-items: center; /* Memastikan logo vertikal center */
+    margin-left: 15px; /* Memberikan jarak dari sisi kiri */
 }
 
 .logo img {
-    width: 100px; /* Ukuran logo lebih kecil */
+    width: 120px; /* Ukuran logo */
 }
 
 nav {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Memberikan jarak dari sisi kanan */
+    margin-right: 15px; /* Memberikan jarak dari sisi kanan */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px; /* Mengurangi margin link */
-    font-size: 0.9rem; /* Ukuran font lebih kecil */
+    margin: 0 15px;
+    font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s; 
+    transition: color 0.3s; /* Transisi untuk link */
 }
 
 nav a:hover {
@@ -61,16 +62,16 @@ nav a:hover {
     height: 3px;
     width: 25px;
     background: white;
-    margin: 2px 0; /* Mengurangi jarak antar span */
+    margin: 3px 0;
     transition: all 0.3s ease;
 }
 
 .hero {
     background-color: #fff;
-    height: 300px; /* Ukuran hero lebih kecil di desktop */
-    width: 100%; /* Lebar penuh untuk hero */
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-    margin: 50px auto; /* Menjaga jarak dengan header */
+    margin: 100px auto 10px; /* Menjaga jarak dengan header */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +141,7 @@ nav.active {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px; /* Sesuaikan tinggi header */
+    top: 70px; /* Sesuaikan tinggi header */
     left: 0;
     right: 0;
     background-color: rgb(253, 151, 27);
@@ -155,14 +156,14 @@ nav.active a {
 /* Media Query untuk Responsif */
 @media (max-width: 768px) {
     header {
-        height: 40px; /* Tinggi header lebih kecil untuk responsif */
-        padding: 5px; /* Mengurangi padding untuk tampilan responsif */
+        flex-direction: row; /* Pastikan header tetap dalam satu baris */
+        height: 50px; /* Tinggi header lebih kecil untuk responsif */
+        padding: 10px; /* Menambahkan padding lebih kecil */
     }
 
     .hamburger {
         display: flex; /* Tampilkan hamburger menu */
-        margin-left: 60;
-        margin-right: 60; /* Memastikan hamburger menu berada di sebelah kanan */
+        margin-left: auto; /* Memastikan hamburger menu berada di sebelah kanan */
     }
 
     nav {
@@ -174,8 +175,8 @@ nav.active a {
 
     nav.active {
         display: flex; /* Tampilkan navbar saat aktif */
-        position: absolute; 
-        top: 40px; /* Sesuaikan dengan tinggi header yang baru */
+        position: absolute; /* Menggunakan posisi absolut */
+        top: 50px; /* Sesuaikan dengan tinggi header yang baru */
         left: 0;
         right: 0;
         background-color: rgb(253, 151, 27); /* Warna latar belakang */
@@ -183,19 +184,14 @@ nav.active a {
     }
 
     nav a {
-        margin: 5px 0; /* Margin vertikal untuk menu */
-        padding: 5px; /* Padding untuk menu */
-        font-size: 0.8rem; /* Ukuran font lebih kecil untuk tampilan mobile */
+        margin: 10px 0; /* Margin vertikal untuk menu */
+        padding: 10px; /* Padding untuk menu */
     }
 
     .hero {
-        height: 200px; /* Ukuran hero lebih kecil di perangkat mobile */
-        width: 100%; /* Lebar penuh untuk hero */
-        margin: 50px auto; /* Menjaga jarak dengan header */
-    }
-
-    .hero img {
-        object-fit: contain; /* Menyesuaikan gambar dalam hero */
+        height: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
+        width: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
+        margin: 70px auto; /* Jarak atas disesuaikan */
     }
 
     .description.bsi {
@@ -212,26 +208,25 @@ nav.active a {
 }
 
 @media (max-width: 480px) {
-    header {
-        height: 35px; /* Tinggi header lebih kecil di perangkat sangat kecil */
-        padding: 5px; /* Padding lebih kecil */
-    }
-
-    nav a {
-        font-size: 0.7rem; /* Ukuran font link lebih kecil */
-    }
-
-    .hero {
-        height: 150px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
-        margin: 30px auto; /* Mengatur margin lebih kecil */
-    }
-
     .description.bsi {
         font-size: 1.2rem; /* Ukuran font lebih kecil di perangkat mobile */
     }
 
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Ukuran font link lebih kecil */
+    }
+
     .info-table {
         font-size: 0.8rem; /* Ukuran font lebih kecil untuk tabel */
+    }
+
+    .hero {
+        height: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
+        width: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
     }
 }
 
