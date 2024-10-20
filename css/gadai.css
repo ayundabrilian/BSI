@@ -67,7 +67,7 @@ nav a:hover {
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    margin: 100px auto 10px;
+    margin: 100px auto 10px; /* Menjaga jarak dengan header */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,9 +173,9 @@ nav.active a {
     }
 
     .hero {
-        height: 300px;
-        width: 300px;
-        margin: 70px auto; /* Untuk menghindari tumpang tindih dengan header */
+        height: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
+        width: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
+        margin: 70px auto; /* Jarak atas disesuaikan */
     }
 
     .description.bsi {
@@ -209,8 +209,8 @@ nav.active a {
     }
 
     .hero {
-        height: 250px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
-        width: 250px;
+        height: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
+        width: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
     }
 }
 
