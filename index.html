@@ -40,7 +40,7 @@
 
         .logo img {
             width: 100%; /* Menyesuaikan lebar gambar */
-            max-width: 200px; /* Lebar maksimum untuk logo */
+            max-width: 180px; /* Lebar maksimum untuk logo */
             height: auto; /* Menjaga rasio aspek */
         }
 
@@ -52,7 +52,7 @@
 
         .title-container h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-family: 'Roboto Slab', serif;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -94,7 +94,7 @@
             text-decoration: none;
             text-transform: uppercase;
             margin: 5px 0;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: background-color 0.3s;
             width: 100%; /* Membuat tautan penuh lebar */
             text-align: center; /* Menengahkan teks */
@@ -119,6 +119,7 @@
             align-items: center;
             justify-content: center;
             margin-top: 120px;
+            position: relative;
         }
 
         .hero h1 {
@@ -126,6 +127,7 @@
             background-color: rgba(16, 181, 167, 0.5);
             padding: 20px;
             border-radius: 8px;
+            max-width: 90%; /* Mencegah teks keluar dari layar */
         }
 
         .container {
@@ -159,6 +161,7 @@
             cursor: pointer;
             transition: transform 0.2s, background-color 0.3s;
             margin: 10px;
+            min-width: 250px; /* Lebar minimum untuk layanan */
         }
 
         .service:hover {
@@ -174,6 +177,24 @@
         }
 
         /* Media Queries untuk responsivitas */
+        @media (max-width: 1024px) {
+            .title-container h1 {
+                font-size: 2rem; /* Ukuran font judul lebih kecil di tablet */
+            }
+
+            nav a {
+                font-size: 1.1rem; /* Ukuran font tautan di tablet */
+            }
+
+            .service {
+                width: 45%; /* Lebar layanan di tablet */
+            }
+
+            .hero h1 {
+                font-size: 2.5rem; /* Ukuran teks judul di hero */
+            }
+        }
+
         @media (max-width: 768px) {
             .hamburger {
                 display: flex;
@@ -207,15 +228,15 @@
 
         @media (max-width: 480px) {
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem; /* Ukuran lebih kecil di ponsel */
             }
 
             h2#layanan {
-                font-size: 2rem;
+                font-size: 2rem; /* Ukuran lebih kecil di ponsel */
             }
 
             .service {
-                width: 90%;
+                width: 90%; /* Lebar layanan di ponsel */
             }
 
             .logo img {
@@ -224,6 +245,10 @@
 
             .title-container h1 {
                 font-size: 1.2rem; /* Mengurangi ukuran font judul lebih jauh */
+            }
+
+            nav a {
+                font-size: 1rem; /* Ukuran font tautan lebih kecil di ponsel */
             }
         }
     </style>
