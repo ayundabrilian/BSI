@@ -61,6 +61,7 @@ nav a:hover {
     display: none; /* Sembunyikan secara default */
     flex-direction: column;
     cursor: pointer;
+    margin-left: 80%; /* Menggeser hamburger menu ke kiri 80% */
 }
 
 .hamburger span {
