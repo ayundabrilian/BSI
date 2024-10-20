@@ -60,9 +60,9 @@ nav a:hover {
 
 .hamburger span {
     height: 3px;
-    width: 35px; /* Memperpanjang lebar garis */
+    width: 25px; /* Memperpanjang lebar hamburger */
     background: white;
-    margin: 5px 0; /* Mengatur margin antara garis */
+    margin: 4px 0;
     transition: all 0.3s ease;
 }
 
@@ -71,7 +71,7 @@ nav a:hover {
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    margin: 120px auto; /* Menjaga jarak dengan header */
+    margin: 70px auto 10px; /* Menjaga jarak dengan header */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +191,7 @@ nav.active a {
     .hero {
         height: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
         width: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
-        margin: 70px auto; /* Jarak atas disesuaikan */
+        margin: 120px auto; /* Jarak atas lebih besar untuk memberi ruang dari header */
     }
 
     .description.bsi {
@@ -227,7 +227,7 @@ nav.active a {
     .hero {
         height: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
         width: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
-        margin: 120px auto;
+        margin: 100px auto; /* Jarak atas lebih kecil untuk perangkat lebih kecil */
     }
 }
 
