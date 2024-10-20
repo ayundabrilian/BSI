@@ -9,7 +9,7 @@ body {
 header {
     background-color: rgb(253, 151, 27);
     color: white;
-    padding: 10px;
+    padding: 5px; /* Mengurangi padding atas dan bawah */
     display: flex;
     align-items: center;
     justify-content: space-between; /* Menjaga logo dan hamburger terpisah */
@@ -17,7 +17,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px; /* Tinggi tetap untuk desktop */
+    height: 50px; /* Mengurangi tinggi header */
     box-shadow: 0px 4px 8px rgba(21, 227, 227, 0.986);
     z-index: 200;
     transition: background-color 0.3s ease; /* Tambahkan transisi */
@@ -30,7 +30,7 @@ header {
 }
 
 .logo img {
-    width: 120px; /* Ukuran logo */
+    width: 100px; /* Mengurangi ukuran logo */
 }
 
 nav {
@@ -42,8 +42,8 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1rem;
+    margin: 0 10px; /* Mengurangi margin antar link */
+    font-size: 0.9rem; /* Mengurangi ukuran font */
     font-weight: bold;
     transition: color 0.3s; /* Transisi untuk link */
 }
@@ -60,7 +60,7 @@ nav a:hover {
 
 .hamburger span {
     height: 3px;
-    width: 25px;
+    width: 20px; /* Mengurangi lebar hamburger */
     background: white;
     margin: 3px 0;
     transition: all 0.3s ease;
@@ -71,7 +71,7 @@ nav a:hover {
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    margin: 100px auto 10px; /* Menjaga jarak dengan header */
+    margin: 70px auto 10px; /* Menjaga jarak dengan header */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +141,7 @@ nav.active {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Sesuaikan tinggi header */
+    top: 50px; /* Sesuaikan tinggi header */
     left: 0;
     right: 0;
     background-color: rgb(253, 151, 27);
@@ -158,7 +158,7 @@ nav.active a {
     header {
         flex-direction: row; /* Pastikan header tetap dalam satu baris */
         height: auto; /* Biarkan tinggi header menyesuaikan dengan konten */
-        padding: 15px; /* Menambahkan padding lebih besar */
+        padding: 10px; /* Menambahkan padding lebih besar */
     }
 
     .hamburger {
@@ -176,7 +176,7 @@ nav.active a {
     nav.active {
         display: flex; /* Tampilkan navbar saat aktif */
         position: absolute; /* Menggunakan posisi absolut */
-        top: 70px; /* Sesuaikan dengan tinggi header */
+        top: 50px; /* Sesuaikan dengan tinggi header */
         left: 0;
         right: 0;
         background-color: rgb(253, 151, 27); /* Warna latar belakang */
