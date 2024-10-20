@@ -164,15 +164,10 @@ nav.active a {
         height: 40px; /* Tinggi header lebih kecil untuk responsif */
         padding: 5px; /* Mengurangi padding untuk tampilan responsif */
     }
-        .title-header {
-            font-size: 1.2rem; /* Ukuran font lebih kecil untuk perangkat tablet */
-        }
-    }
 
     .hamburger {
         display: flex; /* Tampilkan hamburger menu */
-        margin-left: auto; /* Memastikan hamburger menu berada di sebelah kanan */
-        margin-right: 80%;
+        margin-left: 80%; /* Memastikan hamburger menu berada di sebelah kanan */
     }
 
     nav {
@@ -225,10 +220,6 @@ nav.active a {
     header {
         height: 35px; /* Tinggi header lebih kecil di perangkat sangat kecil */
         padding: 5px; /* Padding lebih kecil */
-    }
-        .title-header {
-            font-size: 1rem; /* Ukuran font lebih kecil untuk perangkat tablet */
-        }
     }
 
     nav a {
