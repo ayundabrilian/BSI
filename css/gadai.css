@@ -17,7 +17,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px; /* Tinggi tetap untuk desktop */
+    height: auto; /* Biarkan tinggi otomatis */
     box-shadow: 0px 4px 8px rgba(21, 227, 227, 0.986);
     z-index: 200;
     transition: background-color 0.3s ease; /* Tambahkan transisi */
@@ -30,7 +30,8 @@ header {
 }
 
 .logo img {
-    width: 120px; /* Ukuran logo */
+    width: 20vw; /* Ukuran logo dalam vw untuk responsivitas */
+    max-width: 120px; /* Ukuran maksimum logo */
 }
 
 nav {
@@ -42,8 +43,8 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1rem;
+    margin: 0 5vw; /* Margin responsif */
+    font-size: 2vw; /* Ukuran font responsif */
     font-weight: bold;
     transition: color 0.3s; /* Transisi untuk link */
 }
@@ -68,10 +69,10 @@ nav a:hover {
 
 .hero {
     background-color: #fff;
-    height: 400px;
-    width: 400px;
+    height: 30vh; /* Tinggi hero dalam vh */
+    width: 30vh; /* Lebar hero dalam vh */
     border-radius: 50%;
-    margin: 100px auto 10px; /* Menjaga jarak dengan header */
+    margin: 80px auto 10px; /* Menjaga jarak dengan header */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +91,7 @@ nav a:hover {
 }
 
 .container {
-    padding: 20px;
+    padding: 5vw; /* Padding responsif */
     text-align: center;
     max-width: 800px;
     margin: auto;
@@ -99,7 +100,7 @@ nav a:hover {
 .description.bsi {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 5vw; /* Ukuran font responsif */
     color: #20b2aa;
     margin-top: 20px;
 }
@@ -189,17 +190,17 @@ nav.active a {
     }
 
     .hero {
-        height: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
-        width: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
+        height: 20vh; /* Ukuran hero lebih kecil di perangkat mobile */
+        width: 20vh; /* Ukuran hero lebih kecil di perangkat mobile */
         margin: 70px auto; /* Jarak atas disesuaikan */
     }
 
     .description.bsi {
-        font-size: 1.5rem; /* Ukuran font lebih kecil di perangkat mobile */
+        font-size: 4vw; /* Ukuran font lebih kecil di perangkat mobile */
     }
 
     .container {
-        padding: 10px; /* Padding lebih kecil di perangkat mobile */
+        padding: 5vw; /* Padding lebih kecil di perangkat mobile */
     }
 
     .info-table {
@@ -209,15 +210,11 @@ nav.active a {
 
 @media (max-width: 480px) {
     .description.bsi {
-        font-size: 1.2rem; /* Ukuran font lebih kecil di perangkat mobile */
-    }
-
-    .form-container h2 {
-        font-size: 1.5rem;
+        font-size: 3rem; /* Ukuran font lebih kecil di perangkat mobile */
     }
 
     nav a {
-        font-size: 0.9rem; /* Ukuran font link lebih kecil */
+        font-size: 3vw; /* Ukuran font link lebih kecil */
     }
 
     .info-table {
@@ -225,8 +222,8 @@ nav.active a {
     }
 
     .hero {
-        height: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
-        width: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
+        height: 15vh; /* Ukuran hero lebih kecil di perangkat sangat kecil */
+        width: 15vh; /* Ukuran hero lebih kecil di perangkat sangat kecil */
     }
 }
 
