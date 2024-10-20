@@ -13,14 +13,19 @@
 
     <header>
         <div class="logo">
-            <img src="BSI Logo.jpg" alt="Logo Bank BSI" />
+          <img src="BSI Logo.jpg" alt="Logo Bank BSI" />
         </div>
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="aboutnya⭐.html">Tentang Kami</a>
-            <a href="gadai⭐.html">Gadai Emas</a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav id="navbar">
+          <a href="index.html">Beranda</a>
+          <a href="about⭐.html">Tentang Kami</a>
+          <a href="cicil⭐.html">Cicil Emas</a>
         </nav>
-    </header>
+      </header>
 
     <section class="hero">
         <img src="FTO BSI UANG.jpg" alt="Foto Bank BSI" />
@@ -91,6 +96,13 @@
     <footer>
         <p>⭐ BSI  KCP  Botania Garden ⭐</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
     
 </body>
 </html>
