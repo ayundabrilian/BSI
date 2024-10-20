@@ -45,6 +45,20 @@ nav a:hover {
     color: #11d7c6;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
 .hero {
     background-color: #fff;
     height: 400px;
@@ -115,66 +129,21 @@ nav a:hover {
     color: white;
 }
 
-.form-container {
-    margin-top: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-container input,
-.form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form-container button {
-    background-color: #10b5a7;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1rem;
-}
-
-.form-container button:hover {
-    background-color: #0d978d;
-}
-
-/* Hero untuk BROSUR GADAI EMAS */
-.brochure-hero {
-    background-color: #fff;
-    height: 1000px; /* Tinggi lebih besar untuk menampilkan seluruh brosur */
-    width: 600px;
-    border-radius: 0;
-    margin: 50px auto;
+/* Responsif untuk Navbar */
+nav.active {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Sesuaikan tinggi header */
+    left: 0;
+    right: 0;
+    background-color: rgb(253, 151, 27);
+    z-index: 100;
 }
 
-.brochure-hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    position: absolute;
-    top: 0;
+nav.active a {
+    margin: 10px 0;
+    padding: 10px;
 }
 
 /* Media Query untuk Responsif */
@@ -184,14 +153,20 @@ nav a:hover {
         height: auto;
         padding: 15px;
     }
-    
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
+
+    .hamburger {
+        display: flex;
     }
 
-    nav a {
-        margin: 10px 0;
+    nav {
+        display: none; /* Sembunyikan navbar secara default */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex; /* Tampilkan navbar saat aktif */
     }
 
     .hero {
@@ -204,13 +179,12 @@ nav a:hover {
         font-size: 1.5rem; /* Ukuran font lebih kecil di perangkat mobile */
     }
 
-    .form-container {
-        max-width: 90%; /* Lebar maksimum form 90% dari lebar viewport */
+    .container {
+        padding: 10px; /* Padding lebih kecil di perangkat mobile */
     }
 
-    .brochure-hero {
-        width: 100%;
-        height: auto; /* Otomatis sesuai dengan konten */
+    .info-table {
+        font-size: 0.9rem; /* Ukuran font lebih kecil untuk tabel */
     }
 }
 
@@ -220,36 +194,26 @@ nav a:hover {
     }
 
     .form-container h2 {
-        font-size: 1.5rem; /* Ukuran font judul form lebih kecil */
+        font-size: 1.5rem;
     }
 
     nav a {
         font-size: 0.9rem; /* Ukuran font link lebih kecil */
     }
+
+    .info-table {
+        font-size: 0.8rem; /* Ukuran font lebih kecil untuk tabel */
+    }
+
+    .hero {
+        height: 250px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
+        width: 250px;
+    }
 }
 
-/* Tambahan untuk footer responsif */
 footer {
-    background-color: rgb(253, 151, 27);
-    color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
+    background-color: rgb(253, 151, 27);
     color: white;
-    text-decoration: underline;
-    transition: color 0.3s; /* Transisi untuk link footer */
-}
-
-footer a:hover {
-    color: #11d7c6; /* Warna saat hover */
 }
