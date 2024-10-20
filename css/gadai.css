@@ -156,9 +156,8 @@ nav.active a {
 /* Media Query untuk Responsif */
 @media (max-width: 768px) {
     header {
-        flex-direction: row; /* Pastikan header tetap dalam satu baris */
-        height: 50px; /* Tinggi header lebih kecil untuk responsif */
-        padding: 10px; /* Menambahkan padding lebih kecil */
+        height: 40px; /* Tinggi header lebih kecil untuk responsif */
+        padding: 5px; /* Mengurangi padding untuk tampilan responsif */
     }
 
     .hamburger {
@@ -175,8 +174,8 @@ nav.active a {
 
     nav.active {
         display: flex; /* Tampilkan navbar saat aktif */
-        position: absolute; /* Menggunakan posisi absolut */
-        top: 50px; /* Sesuaikan dengan tinggi header yang baru */
+        position: absolute; 
+        top: 40px; /* Sesuaikan dengan tinggi header yang baru */
         left: 0;
         right: 0;
         background-color: rgb(253, 151, 27); /* Warna latar belakang */
@@ -184,14 +183,19 @@ nav.active a {
     }
 
     nav a {
-        margin: 10px 0; /* Margin vertikal untuk menu */
-        padding: 10px; /* Padding untuk menu */
+        margin: 5px 0; /* Margin vertikal untuk menu */
+        padding: 5px; /* Padding untuk menu */
+        font-size: 0.8rem; /* Ukuran font lebih kecil untuk tampilan mobile */
     }
 
     .hero {
-        height: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
-        width: 250px; /* Ukuran hero lebih kecil di perangkat mobile */
-        margin: 70px auto; /* Jarak atas disesuaikan */
+        height: 200px; /* Ukuran hero lebih kecil di perangkat mobile */
+        width: 100%; /* Lebar penuh untuk hero */
+        margin: 50px auto; /* Menjaga jarak dengan header */
+    }
+
+    .hero img {
+        object-fit: contain; /* Menyesuaikan gambar dalam hero */
     }
 
     .description.bsi {
@@ -208,25 +212,26 @@ nav.active a {
 }
 
 @media (max-width: 480px) {
+    header {
+        height: 35px; /* Tinggi header lebih kecil di perangkat sangat kecil */
+        padding: 5px; /* Padding lebih kecil */
+    }
+
+    nav a {
+        font-size: 0.7rem; /* Ukuran font link lebih kecil */
+    }
+
+    .hero {
+        height: 150px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
+        margin: 30px auto; /* Mengatur margin lebih kecil */
+    }
+
     .description.bsi {
         font-size: 1.2rem; /* Ukuran font lebih kecil di perangkat mobile */
     }
 
-    .form-container h2 {
-        font-size: 1.5rem;
-    }
-
-    nav a {
-        font-size: 0.9rem; /* Ukuran font link lebih kecil */
-    }
-
     .info-table {
         font-size: 0.8rem; /* Ukuran font lebih kecil untuk tabel */
-    }
-
-    .hero {
-        height: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
-        width: 200px; /* Ukuran hero lebih kecil di perangkat sangat kecil */
     }
 }
 
