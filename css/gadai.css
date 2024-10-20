@@ -23,6 +23,11 @@ header {
     transition: background-color 0.3s ease; /* Tambahkan transisi */
 }
 
+.title-header {
+    font-size: 1.5rem; /* Ukuran font untuk title-header di desktop */
+    margin: 0; /* Menghilangkan margin */
+}
+
 .logo {
     display: flex; /* Menambahkan flex untuk logo */
     align-items: center; /* Memastikan logo vertikal center */
@@ -159,10 +164,15 @@ nav.active a {
         height: 40px; /* Tinggi header lebih kecil untuk responsif */
         padding: 5px; /* Mengurangi padding untuk tampilan responsif */
     }
+        .title-header {
+            font-size: 1.2rem; /* Ukuran font lebih kecil untuk perangkat tablet */
+        }
+    }
 
     .hamburger {
         display: flex; /* Tampilkan hamburger menu */
         margin-left: auto; /* Memastikan hamburger menu berada di sebelah kanan */
+        margin-right: 80%;
     }
 
     nav {
@@ -215,6 +225,10 @@ nav.active a {
     header {
         height: 35px; /* Tinggi header lebih kecil di perangkat sangat kecil */
         padding: 5px; /* Padding lebih kecil */
+    }
+        .title-header {
+            font-size: 1rem; /* Ukuran font lebih kecil untuk perangkat tablet */
+        }
     }
 
     nav a {
