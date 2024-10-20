@@ -40,7 +40,7 @@
 
         .logo img {
             width: 100%; /* Menyesuaikan lebar gambar */
-            max-width: 180px; /* Lebar maksimum untuk logo */
+            max-width: 200px; /* Lebar maksimum untuk logo */
             height: auto; /* Menjaga rasio aspek */
         }
 
@@ -52,7 +52,7 @@
 
         .title-container h1 {
             margin: 0;
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-family: 'Roboto Slab', serif;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -94,7 +94,7 @@
             text-decoration: none;
             text-transform: uppercase;
             margin: 5px 0;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: background-color 0.3s;
             width: 100%; /* Membuat tautan penuh lebar */
             text-align: center; /* Menengahkan teks */
@@ -119,7 +119,6 @@
             align-items: center;
             justify-content: center;
             margin-top: 120px;
-            position: relative;
         }
 
         .hero h1 {
@@ -127,7 +126,6 @@
             background-color: rgba(16, 181, 167, 0.5);
             padding: 20px;
             border-radius: 8px;
-            max-width: 90%; /* Mencegah teks keluar dari layar */
         }
 
         .container {
@@ -161,7 +159,6 @@
             cursor: pointer;
             transition: transform 0.2s, background-color 0.3s;
             margin: 10px;
-            min-width: 250px; /* Lebar minimum untuk layanan */
         }
 
         .service:hover {
@@ -177,24 +174,6 @@
         }
 
         /* Media Queries untuk responsivitas */
-        @media (max-width: 1024px) {
-            .title-container h1 {
-                font-size: 2rem; /* Ukuran font judul lebih kecil di tablet */
-            }
-
-            nav a {
-                font-size: 1.1rem; /* Ukuran font tautan di tablet */
-            }
-
-            .service {
-                width: 45%; /* Lebar layanan di tablet */
-            }
-
-            .hero h1 {
-                font-size: 2.5rem; /* Ukuran teks judul di hero */
-            }
-        }
-
         @media (max-width: 768px) {
             .hamburger {
                 display: flex;
@@ -209,12 +188,12 @@
             }
 
             .services {
-                flex-direction: column;
-                align-items: center;
+                justify-content: center; /* Menengahkan layanan pada layar kecil */
             }
 
             .service {
-                width: 80%;
+                width: 100%; /* Membuat layanan penuh lebar pada layar kecil */
+                margin: 10px 0; /* Menambah jarak antara layanan */
             }
 
             .logo img {
@@ -228,15 +207,15 @@
 
         @media (max-width: 480px) {
             .hero h1 {
-                font-size: 1.8rem; /* Ukuran lebih kecil di ponsel */
+                font-size: 2rem;
             }
 
             h2#layanan {
-                font-size: 2rem; /* Ukuran lebih kecil di ponsel */
+                font-size: 2rem;
             }
 
             .service {
-                width: 90%; /* Lebar layanan di ponsel */
+                width: 90%;
             }
 
             .logo img {
@@ -245,10 +224,6 @@
 
             .title-container h1 {
                 font-size: 1.2rem; /* Mengurangi ukuran font judul lebih jauh */
-            }
-
-            nav a {
-                font-size: 1rem; /* Ukuran font tautan lebih kecil di ponsel */
             }
         }
     </style>
@@ -272,7 +247,7 @@
 <nav id="navbar">
     <a href="index.html">Beranda</a>
     <a href="#layanan">Layanan</a>
-    <a href="about.html⭐">Tentang Kami</a>
+    <a href="about⭐.html">Tentang Kami</a>
     <a href="kontak.html">Kontak Kami</a>
 </nav>
 
@@ -297,15 +272,14 @@
 </section>
 
 <footer>
-    <p>⭐ BSI  KCP  Botania Garden ⭐</p>
+    <p>⭐ BSI  KCP  Botania Garden ⭐</p>
 </footer>
 
 <script>
     function toggleNav() {
-        var nav = document.getElementById('navbar');
-        nav.classList.toggle('active');
+        const nav = document.getElementById("navbar");
+        nav.classList.toggle("active");
     }
 </script>
-
 </body>
 </html>
