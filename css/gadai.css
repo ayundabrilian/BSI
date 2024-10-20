@@ -56,6 +56,7 @@ nav a:hover {
     display: none; /* Sembunyikan secara default */
     flex-direction: column;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .hamburger span {
