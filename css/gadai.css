@@ -46,9 +46,12 @@ nav a:hover {
 }
 
 .hamburger {
-    display: none;
+    display: none; /* Sembunyikan secara default */
     flex-direction: column;
     cursor: pointer;
+    position: absolute; /* Mengatur posisi absolut */
+    right: 15px; /* Jarak dari sisi kanan */
+    top: 15px; /* Jarak dari atas */
 }
 
 .hamburger span {
